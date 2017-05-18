@@ -20,6 +20,7 @@ headlines = [
         'cached': True,
         'article_id': 1,
         'article_url': None
+        'written_date': '2017-04-20 15:45',
     },
     {
         'id': 2,
@@ -38,6 +39,7 @@ headlines = [
         'cached': False,
         'article_id': 2,
         'article_url': None
+        'written_date': '2017-04-20 17:51',
     }
 ]
 
@@ -71,6 +73,7 @@ articles = [
     {
         'id': 2,
         'section_id': 2,
+        'title': u'[Oh!쎈 톡] ‘효리네민박’, 신청 벌써 5천건 돌파..CP “감사+부담”',
         'author': u'강서정 기자',
         'written_date': '2017-04-20 17:51',
         'textbody': '''
