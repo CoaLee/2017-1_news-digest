@@ -10,7 +10,7 @@ def main():
         data = parse_article(url)
         print(data['textbody'])
         i += 1
-        if i>=5:
+        if i>=3:
             break
 
 if __name__ == '__main__':
