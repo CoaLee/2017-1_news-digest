@@ -18,10 +18,15 @@ c.execute(reset_query(TABLE_SECTIONS))
 c.execute(reset_query(TABLE_HEADLINES))
 c.execute(reset_query(TABLE_ARTICLES))
 
-def_section_name = u'네이버 정치'
-def_base_url = u'http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=100'
+section_name = u'네이버 정치'
+base_url = u'http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=100'
 c.execute('INSERT INTO {} (section_name, base_url) VALUES ("{}", "{}");'\
-        .format(TABLE_SECTIONS, def_section_name, def_base_url))
+        .format(TABLE_SECTIONS, section_name, base_url))
+
+section_name = u'네이버 경제'
+base_url = u'http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=101'
+c.execute('INSERT INTO {} (section_name, base_url) VALUES ("{}", "{}");'\
+        .format(TABLE_SECTIONS, section_name, base_url))
 
 c.close()
 db.commit()

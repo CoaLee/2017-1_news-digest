@@ -14,19 +14,21 @@ _cursor = None
 def open_db():
     global _db, _cursor
 
-    if _cursor == None and _db == None:
-        _db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
-        _cursor = _db.cursor()
-    else:
+    if _cursor != None or _db != None:
         close_db()
+
+    _db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
+    _cursor = _db.cursor()
 
 def close_db():
     global _db, _cursor
 
     if _cursor != None:
         _cursor.close()
+        _cursor = None
     if _db != None:
         _db.close()
+        _db = None
 
 def query_key_value_builder(data_dict):
     key_q = '(' 
@@ -49,8 +51,11 @@ def insert_into(table, data):
     _db.commit()
 
 # TODO for rows
-def select_from(table, rows=0):
+def select_from(table, cond=None):
     query = 'SELECT * FROM {}'.format(table)
+    if cond != None:
+        query += ' WHERE {};'.format(cond)
+
     _cursor.execute(query)
 
     result = _cursor.fetchall()

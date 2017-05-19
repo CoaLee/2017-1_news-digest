@@ -14,8 +14,10 @@ def main():
     next_article_id = next_id(TABLE_ARTICLES)
 
     for (section_id, section_name, base_url) in sections:
+        print(section_id, base_url)
         article_urls = extract_article_urls(base_url)
         i = 0 
+        print(article_urls[:3])
         for url in article_urls:
             data = parse_article(url)
             # parsing success
@@ -26,7 +28,6 @@ def main():
                 headline['cached'] = 1
                 article = filter_dict_with_tuple(article_cols, data)
                 # TODO photos processing
-                # print(article)
                 insert_into(TABLE_ARTICLES, article)
                 next_article_id += 1
             # parsing fail

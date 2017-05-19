@@ -1,7 +1,8 @@
 # modifed from http://m.blog.naver.com/htk1019
 
-import re
 import requests
+from bs4 import BeautifulSoup
+import re
 
 def get_html(target_date, page_num):
     page_url = "http://news.naver.com/main/list.nhn?sid2=258&sid1=101&mid=shm&mode=LS2D&date=" + \
@@ -12,11 +13,14 @@ def get_html(target_date, page_num):
 
     return html
 
-def ext_news_urls(html):
-    url_frags = re.findall('<a href="(.*?)"', html)
+def ext_news_urls(soup):
+    anchors = soup.find_all('a', href=re.compile('(.*?)'))
     news_urls=[]
 
-    for url_frag in url_frags:
+    i = 0
+    for anchor in anchors:
+        url_frag = anchor['href']
+
         if "aid" in url_frag:
             news_urls.append(url_frag)
         else :
@@ -27,10 +31,12 @@ def ext_news_urls(html):
 def extract_article_urls(base_url):
     article_urls = []
 
-    response = requests.get(base_url)
-    base_html = response.text
+    req = requests.get(base_url)
+    soup = BeautifulSoup(req.text, 'lxml')
 
-    urls = ext_news_urls(base_html)
+    main_soup = soup.find_all('div', id='main_content')[0]
+
+    urls = ext_news_urls(main_soup)
     article_urls += urls
 
     return article_urls
