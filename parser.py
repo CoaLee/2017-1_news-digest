@@ -56,6 +56,9 @@ def parse_article(article_URL):
     soup = BeautifulSoup(req.text, 'lxml')
     data = {}
     data['title'] = get_title(soup)
+    # in case of failure, return None. It will be taken care 
+    if data['title'] == '':
+        return None
     data['written_date'] = get_date(soup)
     data['textbody'] = get_textbody(soup)
     return data

@@ -8,50 +8,88 @@ TABLE_SECTIONS = 'news_sections'
 TABLE_HEADLINES = 'section_headlines'
 TABLE_ARTICLES = 'articles'
 
-def play_with_db(query, cb_func=None):
-    db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
-    c = db.cursor()
+_db = None
+_cursor = None
 
-    c.execute(query)
-    if cb_func is not None :
-        cb_func(c)
+def open_db():
+    global _db, _cursor
+
+    if _cursor == None and _db == None:
+        _db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
+        _cursor = _db.cursor()
     else:
-        db.commit()
+        close_db()
 
-    c.close()
-    db.close()
+def close_db():
+    global _db, _cursor
 
-def print_fetchall(cursor):
-    print(cursor.fetchall())
+    if _cursor != None:
+        _cursor.close()
+    if _db != None:
+        _db.close()
 
 def query_key_value_builder(data_dict):
-    key_q = '('
-    value_q = '('
+    key_q = '(' 
+    value_tuple = ()
 
     for key in data_dict.keys():
-        key_q += '{}, '.format(key)
-        value_q += '"{}", '.format(data_dict[key])
+        if data_dict[key] != None:
+            key_q += '{}, '.format(key)
+            value_tuple += (str(data_dict[key]), )
 
     key_q = key_q[:-2] + ')'
-    value_q = value_q[:-2] + ')'
 
-    query = "{} VALUES {}".format(key_q, value_q)
+    query = '{} VALUES {};'.format(key_q, str(value_tuple))
     return query
 
 def insert_into(table, data):
-    query = 'INSERT INTO {} {};'.format(table, query_key_value_builder(data))
-    print(query)
-    play_with_db(query)
+    query = "INSERT INTO {} {};".format(table, query_key_value_builder(data))
+    _cursor.execute(query)
 
+    _db.commit()
+
+# TODO for rows
 def select_from(table, rows=0):
     query = 'SELECT * FROM {}'.format(table)
-    play_with_db(query, print_fetchall)
+    _cursor.execute(query)
+
+    result = _cursor.fetchall()
+    return result
+
+def column_name(table):
+    query = 'SELECT column_name FROM information_schema.columns\
+            WHERE table_name = "{}" AND table_schema = "{}";'\
+            .format(table, DATABASE)
+
+    _cursor.execute(query)
+
+    # in type of (('column1', ), ('column2', ), ...)
+    columns = _cursor.fetchall()
+    result = ()
+
+    for col_tuple in columns:
+        result += col_tuple
+
+    return result
+
+def next_id(table):
+    query = 'SELECT auto_increment FROM information_schema.tables\
+            WHERE table_name = "{}" AND table_schema = "{}";'\
+            .format(table, DATABASE)
+
+    _cursor.execute(query)
+
+    return _cursor.fetchone()[0]
 
 def main():
-    select_from(TABLE_SECTIONS)
+    open_db()
+
     dummy_dict = {'textbody': 'lorem ipsum어저고 저쩌고', 'img_urls': 'http://a.a/a'}
-    insert_into(TABLE_ARTICLES, dummy_dict)
-    select_from(TABLE_ARTICLES)
+    print(select_from(TABLE_ARTICLES))
+    print(column_name(TABLE_HEADLINES))
+    print(next_id(TABLE_ARTICLES))
+
+    close_db()
 
 if __name__ == '__main__':
     main()
