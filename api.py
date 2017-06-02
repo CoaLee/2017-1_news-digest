@@ -1,11 +1,74 @@
 from flask import Flask, jsonify, abort, json, make_response
+# from flask_errormail import mail_on_500
+import logging
+from logging.handlers import SMTPHandler
+from email_account import EMAIL_ID, EMAIL_PW
+import logging
+import logging.handlers
+ 
 # from dummy_db import sections, headlines, articles
-from interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
 
 app = Flask(__name__)
+'''
+mail_handler = SMTPHandler(('smtp.gmail.com', 587),
+    'coaleeyong@gmail.com',
+    ADMINS, 
+    'Failed',
+    (EMAIL_ID, EMAIL_PW),
+    ()
+)
+mail_handler.setLevel(logging.ERROR)
+app.logger.addHandler(mail_handler)
+'''
+# mail_on_500(app, ADMINS)
 
+ADMINS = ['coaleeyong@gmail.com', 'dukeow@naver.com']
+'''
+class TlsSMTPHandler(logging.handlers.SMTPHandler):
+    def emit(self, record):
+        """
+        Emit a record.
+ 
+        Format the record and send it to the specified addressees.
+        """
+        try:
+            import smtplib
+            import string # for tls add this line
+            try:
+                from email.utils import formatdate
+            except ImportError:
+                formatdate = self.date_time
+            port = self.mailport
+            if not port:
+                port = smtplib.SMTP_PORT
+            smtp = smtplib.SMTP(self.mailhost, port)
+            msg = self.format(record)
+            msg = "From: %s\r\nTo: %s\r\nSubject: %s\r\nDate: %s\r\n\r\n%s" % (
+                            self.fromaddr,
+                            string.join(self.toaddrs, ","),
+                            self.getSubject(record),
+                            formatdate(), msg)
+            if self.username:
+                smtp.ehlo() # for tls add this line
+                smtp.starttls() # for tls add this line
+                smtp.ehlo() # for tls add this line
+                smtp.login(self.username, self.password)
+            smtp.sendmail(self.fromaddr, self.toaddrs, msg)
+            smtp.quit()
+        except (KeyboardInterrupt, SystemExit):
+            raise
+        except:
+            self.handleError(record)
+ 
+logger = logging.getLogger()
+ 
+gm = TlsSMTPHandler(("smtp.gmail.com", 587), 'coaleeyong@gmail.com', ADMINS, 'Error found!', (EMAIL_ID, EMAIL_PW))
+gm.setLevel(logging.ERROR)
+ 
+logger.addHandler(gm)
+'''
 API_ADDRESS = '/news_digest/api/'
-API_VERSION = 'v0.1'
+API_VERSION = 'v0.2'
 CURRENT_API = API_ADDRESS + API_VERSION + '/' 
 
 # to ensure unicode transmitted unbroken
@@ -17,104 +80,10 @@ def kor_jsonify(somedict):
 
 @app.route(API_ADDRESS)
 def version_notice():
-    return "Latest API version is {}. Try 'GET [root]{}'\n".format(API_VERSION, CURRENT_API)
-
-@app.route(CURRENT_API)
-def usage_notice():
-    return """\n
-    <h2>Available request</h2>
-    <p>GET '{}sections'</p>
-    <p>GET '{}sections/[section_id]'</p>
-    <p>GET '{}sections/articles/[article_id]'</p>
-    """.format(CURRENT_API, CURRENT_API, CURRENT_API)
-
-@app.route(CURRENT_API+'sections', methods=['GET'])
-def get_sections():
-    open_db()
-    
-    section_col = column_name(TABLE_SECTIONS)
-    section_tuples = select_from(TABLE_SECTIONS)
-
-    sections = []
-
-    for section_tuple in section_tuples:
-        section = {}
-        for col_name in section_col:
-            section[col_name] = section_tuple[section_col.index(col_name)]
-        sections.append(section)
-    
-    close_db()
-    return kor_jsonify({'sections': sections})
-
-@app.route(CURRENT_API+'sections/<int:section_id>', methods=['GET'])
-def get_headlines(section_id):
-    #TODO this part will be done by database query, not in python
-    open_db()
-
-    headline_col = column_name(TABLE_HEADLINES)
-    headline_tuples = select_from(TABLE_HEADLINES, 'section_id="{}"'.format(section_id))
-
-    headlines = []
-
-    for headline_tuple in headline_tuples:
-        headline = {}
-        for col_name in headline_col:
-            headline[col_name] = headline_tuple[headline_col.index(col_name)]
-        headlines.append(headline)
-
-    close_db()
-
-    if len(headlines) == 0:
-        abort(404)
-
-    return kor_jsonify({'headlines': headlines})
-
-#TODO need to optimize & fix in case of img_pos at 0
-def content_join(article_dict):
-    res = { 
-        'id': article_dict['id'],
-        'author': article_dict['author'],
-        'written_date': article_dict['written_date']
-    }   
-    if(article_dict['img_pos'] is None):
-        res['content'] = article_dict['textbody']
-    else:
-        img_pos_list = article_dict['img_pos'].split(' ')
-        img_urls_list = article_dict['img_urls'].split(' ')
-        text = article_dict['textbody']
-        content = []
-        i_prev = 0 
-        cnt = 0 
-        for i in img_pos_list:
-            i_int = int(i)
-            content.append(text[i_prev:i_int])
-            content.append(img_urls_list[cnt])
-            i_prev = i_int
-            cnt += 1
-        content.append(text[i_int:])
-        res['content'] = content
-    return res 
-
-@app.route(CURRENT_API+'sections/articles/<int:article_id>', methods=['GET'])
-def get_article(article_id):
-    #TODO this part will be done by database query, not in python
-    open_db()
-
-    article_col = column_name(TABLE_ARTICLES)
-    article_tuple = select_from(TABLE_ARTICLES, 'id="{}"'.format(article_id))[0]
-
-    article = {}
-    for col_name in article_col:
-        article[col_name] = article_tuple[article_col.index(col_name)]
-    #TODO need to implement author extraction
-    article['author'] = 'Best Author in the World(need to fix)'
-
-    close_db()
-
-    if len(article_tuple) == 0:
-        abort(404)
-    return kor_jsonify({'article': content_join(article)})
+    return "Latest API version is {}. Try 'GET [api_address]{}'\n".format(API_VERSION, CURRENT_API)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    app.run(host='0.0.0.0', debug=True)
+    gm = TlsSMTPHandler(("smtp.gmail.com", 587), 'coaleeyong@gmail.com', ADMINS, 'Error found!', (EMAIL_ID, EMAIL_PW))
+    gm.setLevel(logging.ERROR)
+    app.logger.addHandler(gm)

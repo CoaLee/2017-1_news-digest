@@ -31,4 +31,3 @@ c.execute('INSERT INTO {} (section_name, base_url) VALUES ("{}", "{}");'\
 c.close()
 db.commit()
 db.close()
-

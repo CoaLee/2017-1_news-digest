@@ -16,6 +16,7 @@ def get_title(soup):
 
 def get_date(soup):
     date = ''
+    # TODO datetime object
     for tmp_date in soup.find_all(class_='t11'):
         date = tmp_date.text
         break

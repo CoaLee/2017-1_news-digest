@@ -10,14 +10,15 @@ def main():
 
     headline_cols = column_name(TABLE_HEADLINES)
     article_cols = column_name(TABLE_ARTICLES)
+    '''
+    headline_cols = ('id', 'article_id')
+    '''
 
     next_article_id = next_id(TABLE_ARTICLES)
 
     for (section_id, section_name, base_url) in sections:
-        print(section_id, base_url)
         article_urls = extract_article_urls(base_url)
         i = 0 
-        print(article_urls[:3])
         for url in article_urls:
             data = parse_article(url)
             # parsing success
@@ -26,6 +27,8 @@ def main():
                 headline['section_id'] = section_id
                 headline['article_id'] = next_article_id
                 headline['cached'] = 1
+
+                # Caching 
                 article = filter_dict_with_tuple(article_cols, data)
                 # TODO photos processing
                 insert_into(TABLE_ARTICLES, article)
@@ -40,7 +43,7 @@ def main():
             insert_into(TABLE_HEADLINES, headline)
 
             i += 1
-            if i >= 3:
+            if i >= 1000:
                 break
 
     close_db()
