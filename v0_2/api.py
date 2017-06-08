@@ -1,6 +1,7 @@
-from flask import Flask, jsonify, abort, json, make_response
+from flask import Flask, jsonify, abort, json, make_response, request
 # from dummy_db import sections, headlines, articles
 from interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+import ast
 
 app = Flask(__name__)
 
@@ -11,25 +12,24 @@ def kor_jsonify(somedict):
     res.headers['Content-Type'] += '; charset=utf-8'
     return res 
 
-@app.route('/')
-def usage_notice():
-    return """\n
+usage_string = """\n
     <h2>Available requests:</h2>
     <p>GET '[api_root]/sections'</p>
     <p>GET '[api_root]/sections/[section_id]'</p>
+    <p>GET '[api_root]/sections/[section_id]?page=[page_num]'</p>
     <p>GET '[api_root]/articles'<p>
     <p>GET '[api_root]/articles/[article_id]'</p>
     """
 
+@app.route('/')
+def usage_notice():
+    return usage_string 
+
 @app.errorhandler(404)
 def error_notice(error):
     return """\n
-    <h2>Invalid request. Available requests are:</h2>
-    <p>GET '[api_root]/sections'</p>
-    <p>GET '[api_root]/sections/[section_id]'</p>
-    <p>GET '[api_root]/articles'<p>
-    <p>GET '[api_root]/articles/[article_id]'</p>
-    """
+    <h2>Invalid request.</h2>
+    """ + usage_string
 
 @app.route('/sections', methods=['GET'])
 def get_sections():
@@ -69,7 +69,13 @@ def get_headlines(section_id):
     if len(headlines) == 0:
         abort(404)
 
-    return kor_jsonify({'headlines': headlines})
+    # Pagination. api?page=[page no.]
+    page = request.args.get('page')
+
+    if page is not None:
+        return kor_jsonify({'headlines': headlines[int(page)*20:(int(page)+1)*20],'page':int(page)+1})
+    else:
+        return kor_jsonify({'headlines': headlines})
 
 @app.route('/articles', methods=['GET'])
 def get_whole_articles():
@@ -79,14 +85,30 @@ def get_whole_articles():
     article_tuples = select_from(TABLE_ARTICLES)
 
     articles = []
-    
-    for article_tuple in article_tuples:
-        article = {}
-        for col_name in article_col:
-            article[col_name] = article_tuple[article_col.index(col_name)]
-        articles.append(article)
-    
+
+    # ID querying
+    # id_list = request.args.getlist('id[]')
+    id_list_str = request.args.get('id')
+    id_list = ast.literal_eval(id_list_str)
+
+    if id_list == []:
+        print(str(id_list))
+        for article_tuple in article_tuples:
+            article = {}
+            for col_name in article_col:
+                article[col_name] = article_tuple[article_col.index(col_name)]
+            articles.append(article)
+    else:
+        print("Exist!: " + str(id_list))
+        for article_tuple in article_tuples:
+            article = {}
+            if article_tuple[0] in id_list:
+                for col_name in article_col:
+                    article[col_name] = article_tuple[article_col.index(col_name)]
+                articles.append(article)
+
     close_db()
+    
     return kor_jsonify({'articles': articles})
 
 @app.route('/articles/<int:article_id>', methods=['GET'])
@@ -134,7 +156,6 @@ def content_join(article_dict):
         content.append(text[i_int:])
         res['content'] = content
     return res 
-
 
 if __name__ == '__main__':
     app.run(debug=True)

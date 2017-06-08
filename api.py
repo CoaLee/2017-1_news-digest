@@ -84,6 +84,8 @@ def version_notice():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
+    '''
     gm = TlsSMTPHandler(("smtp.gmail.com", 587), 'coaleeyong@gmail.com', ADMINS, 'Error found!', (EMAIL_ID, EMAIL_PW))
     gm.setLevel(logging.ERROR)
     app.logger.addHandler(gm)
+    '''
