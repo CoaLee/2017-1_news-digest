@@ -1,10 +1,10 @@
 from flask import Flask, jsonify, abort, json, make_response
 # from flask_errormail import mail_on_500
-import logging
-from logging.handlers import SMTPHandler
-from email_account import EMAIL_ID, EMAIL_PW
-import logging
-import logging.handlers
+# import logging
+# from logging.handlers import SMTPHandler
+# from email_account import EMAIL_ID, EMAIL_PW
+# import logging
+# import logging.handlers
  
 # from dummy_db import sections, headlines, articles
 

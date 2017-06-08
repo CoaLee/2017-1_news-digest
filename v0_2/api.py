@@ -18,6 +18,7 @@ usage_string = """\n
     <p>GET '[api_root]/sections/[section_id]'</p>
     <p>GET '[api_root]/sections/[section_id]?page=[page_num]'</p>
     <p>GET '[api_root]/articles'<p>
+    <p>GET '[api_root]/articles?id=[[list, of, ids]]'<p>
     <p>GET '[api_root]/articles/[article_id]'</p>
     """
 
@@ -89,23 +90,25 @@ def get_whole_articles():
     # ID querying
     # id_list = request.args.getlist('id[]')
     id_list_str = request.args.get('id')
-    id_list = ast.literal_eval(id_list_str)
+    id_list = None
+    if id_list_str is not None:
+        id_list = ast.literal_eval(id_list_str)
 
-    if id_list == []:
-        print(str(id_list))
+    if id_list is None:
         for article_tuple in article_tuples:
             article = {}
             for col_name in article_col:
                 article[col_name] = article_tuple[article_col.index(col_name)]
-            articles.append(article)
+                article['author'] = 'Best Author in the World(need to fix)'
+            articles.append(content_join(article))
     else:
-        print("Exist!: " + str(id_list))
         for article_tuple in article_tuples:
             article = {}
             if article_tuple[0] in id_list:
                 for col_name in article_col:
                     article[col_name] = article_tuple[article_col.index(col_name)]
-                articles.append(article)
+                    article['author'] = 'Best Author in the World(need to fix)'
+                articles.append(content_join(article))
 
     close_db()
     
@@ -138,19 +141,29 @@ def content_join(article_dict):
         'title': article_dict['title'],
         'written_date': article_dict['written_date']
     }   
-    if(article_dict['img_pos'] is None):
+    if article_dict['img_pos'] == '' :
         res['content'] = article_dict['textbody']
     else:
         img_pos_list = article_dict['img_pos'].split(' ')
-        img_urls_list = article_dict['img_urls'].split(' ')
+        img_urls_list = article_dict['img_urls'].split('\n')
+        img_pos_list.remove('')
+        img_urls_list.remove('')
         text = article_dict['textbody']
         content = []
         i_prev = 0 
         cnt = 0 
         for i in img_pos_list:
             i_int = int(i)
-            content.append(text[i_prev:i_int])
-            content.append(img_urls_list[cnt])
+            if i_prev != i_int:
+                content.append(text[i_prev:i_int])
+            tmp_dict = {}
+            tmp_idx = img_urls_list[cnt].find(' ')
+            if tmp_idx != -1:
+                tmp_dict['url'] = img_urls_list[cnt][:tmp_idx]
+                tmp_dict['caption'] = img_urls_list[cnt][tmp_idx+1:]
+            else:
+                tmp_dict['url'] = img_urls_list[cnt]
+            content.append(tmp_dict)
             i_prev = i_int
             cnt += 1
         content.append(text[i_int:])

@@ -20,9 +20,9 @@ def main():
         article_urls = extract_article_urls(base_url)
         i = 0 
         for url in article_urls:
-            data = parse_article(url)
-            # parsing success
-            if data != None: 
+            try:
+                data = parse_article(url)
+                # parsing success
                 headline = filter_dict_with_tuple(headline_cols, data)
                 headline['section_id'] = section_id
                 headline['article_id'] = next_article_id
@@ -30,16 +30,17 @@ def main():
 
                 # Caching 
                 article = filter_dict_with_tuple(article_cols, data)
-                # TODO photos processing
                 insert_into(TABLE_ARTICLES, article)
-                next_article_id += 1
+                next_article_id += 1 #TODO combine headlines and articles tables together
             # parsing fail
-            else:
+            except KeyboardInterrupt:
+                raise KeyboardInterrupt
+            except:
                 headline = filter_dict_with_tuple(headline_cols, {})
                 headline['section_id'] = section_id
                 headline['cached'] = 0
                 headline['article_url'] = url
-            
+
             insert_into(TABLE_HEADLINES, headline)
 
             i += 1
