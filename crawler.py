@@ -32,7 +32,7 @@ def main():
                 article = filter_dict_with_tuple(article_cols, data)
                 insert_into(TABLE_ARTICLES, article)
                 next_article_id += 1 #TODO combine headlines and articles tables together
-            # parsing fail
+            # parsing fail -> Cache fail
             except KeyboardInterrupt:
                 raise KeyboardInterrupt
             except:

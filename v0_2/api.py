@@ -99,7 +99,6 @@ def get_whole_articles():
             article = {}
             for col_name in article_col:
                 article[col_name] = article_tuple[article_col.index(col_name)]
-                article['author'] = 'Best Author in the World(need to fix)'
             articles.append(content_join(article))
     else:
         for article_tuple in article_tuples:
@@ -107,7 +106,6 @@ def get_whole_articles():
             if article_tuple[0] in id_list:
                 for col_name in article_col:
                     article[col_name] = article_tuple[article_col.index(col_name)]
-                    article['author'] = 'Best Author in the World(need to fix)'
                 articles.append(content_join(article))
 
     close_db()
@@ -124,8 +122,6 @@ def get_article(article_id):
     article = {}
     for col_name in article_col:
         article[col_name] = article_tuple[article_col.index(col_name)]
-    #TODO need to implement author extraction
-    article['author'] = 'Best Author in the World(need to fix)'
 
     close_db()
 
@@ -137,9 +133,9 @@ def get_article(article_id):
 def content_join(article_dict):
     res = { 
         'id': article_dict['id'],
-        'author': article_dict['author'],
+        'journal': article_dict['journal'],
         'title': article_dict['title'],
-        'written_date': article_dict['written_date']
+        'written_date': article_dict['written_date'].strftime('%Y-%m-%d %H:%M')
     }   
     if article_dict['img_pos'] == '' :
         res['content'] = article_dict['textbody']

@@ -6,6 +6,7 @@ enzyme = {
     'title': 'articleTitle',
     'article_body': 'articleBodyContents',
     'written_date': 't11',
+    'journal': 'press_logo',
     'image': 'end_photo_org'
 }
 IMG_TMP_TAG = '[<img]>'
@@ -23,6 +24,13 @@ def get_date(soup):
         date = tmp_date.text
         break
     return date
+
+def get_journal(soup):
+    journal = ''
+    for item in soup.find_all(class_=enzyme['journal']):
+        journal = item.find('img')['title']
+    return journal
+
 
 def get_textbody(soup):
     text = ''
@@ -122,6 +130,7 @@ def parse_article(article_URL):
     if data['title'] == '':
         return None
     data['written_date'] = get_date(soup)
+    data['journal'] = get_journal(soup)
     body_dict = get_textbody_and_imgs(soup)
     data['textbody'] = body_dict['textbody']
     data['img_pos'] = body_dict['img_pos']
