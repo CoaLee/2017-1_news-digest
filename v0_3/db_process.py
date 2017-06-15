@@ -1,14 +1,6 @@
 from flask import jsonify, request, abort
 from v0_3.interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
 import config
-#import redis
-
-
-'''
-CACHE_SERVER = None 
-if config.USING_CACHE is True:
-    CACHE_SERVER = redis.Redis("localhost")
-'''
 
 def db_sections():
     open_db()
@@ -26,12 +18,6 @@ def db_sections():
     
     close_db()
     return kor_jsonify({'sections': sections})
-'''
-def db_sections():
-    if CACHE_SERVER is None:
-        return _db_sections()
-    return "hah"
-'''
 
 def db_headlines(section_id):
     open_db()

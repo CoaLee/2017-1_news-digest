@@ -151,7 +151,10 @@ def main():
     data = {}
     data['title'] = get_title(soup)
     data['written_date'] = get_date(soup)
-    data['textbody'] = get_textbody(soup)
+    body_dict = get_textbody_and_imgs(soup)
+    data['textbody'] = body_dict['textbody']
+    data['img_pos'] = body_dict['img_pos']
+    data['img_urls'] = body_dict['img_urls']
     print(data)
 
 if __name__ == '__main__':

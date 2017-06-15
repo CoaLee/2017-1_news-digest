@@ -1,9 +1,9 @@
 import MySQLdb
-import config
+import config as CONFIG
 import redis
 
 CACHE_SERVER = None 
-if config.USING_CACHE is True:
+if CONFIG.USING_CACHE is True:
     CACHE_SERVER = redis.Redis("localhost")
 
 USER = 'root'
@@ -34,6 +34,7 @@ def close_db():
         _cursor.close()
         _cursor = None
     if _db != None:
+        _db.commit()
         _db.close()
         _db = None
 
@@ -50,6 +51,10 @@ def query_key_value_builder(data_dict):
 
     query = '{} VALUES {};'.format(key_q, str(value_tuple))
     return query
+
+def insert_into(table, data):
+    query = "INSERT INTO {} {};".format(table, query_key_value_builder(data))
+    _cursor.execute(query)
 
 def query_key_values_builder(data_cols, data_dict_list):
     key_q = '(' 
@@ -84,14 +89,6 @@ def query_key_values_builder(data_cols, data_dict_list):
 def insert_into_many(table, cols, data_list):
     query = "INSERT INTO {} {};".format(table, query_key_values_builder(cols, data_list))
     _cursor.execute(query)
-
-    _db.commit()
-
-def insert_into(table, data):
-    query = "INSERT INTO {} {};".format(table, query_key_value_builder(data))
-    _cursor.execute(query)
-
-    _db.commit()
 
 # TODO for rows
 def select_from(table, cond=None):
@@ -132,9 +129,6 @@ def next_id(table):
 def reset_table(table):
     query = 'DELETE FROM {}; ALTER TABLE {} AUTO_INCREMENT=1;'.format(table, table)
     _cursor.execute(query)
-
-    _db.commit()
-
 
 def main():
     open_db()

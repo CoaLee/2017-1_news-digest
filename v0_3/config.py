@@ -17,5 +17,10 @@ DEBUG_LOGGING = False
 # Threaded Crawling
 CRAWL_THREADED = False
 
+# Number of urls to parse per spider
+CRAWL_CAPACITY = 30
+
+# Max number of cached urls to check duplicates. recommend >= 200, at least 100.
+MAX_CACHED_URLS = 500
 
 TEST_TEXT = "I'm Here in version folder"

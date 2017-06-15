@@ -1,4 +1,12 @@
 import MySQLdb
+import redis
+import config as CONFIG
+
+CACHE_SERVER = None 
+if CONFIG.USING_CACHE is True:
+    CACHE_SERVER = redis.Redis("localhost")
+
+CACHE_SERVER.flushdb()
 
 USER = 'root'
 DATABASE = 'news_digest'
