@@ -1,4 +1,10 @@
 import MySQLdb
+import config
+import redis
+
+CACHE_SERVER = None 
+if config.USING_CACHE is True:
+    CACHE_SERVER = redis.Redis("localhost")
 
 USER = 'root'
 DATABASE = 'news_digest'

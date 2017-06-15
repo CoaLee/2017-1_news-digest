@@ -1,45 +1,16 @@
-from flask import Flask, jsonify, abort, json, make_response, request
-# from dummy_db import sections, headlines, articles
-from v0_2.interact_db import open_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+from flask import jsonify, request, abort
+from v0_3.interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+import config
+#import redis
 
-app = Flask(__name__)
-
-# to ensure unicode transmitted unbroken
-app.config['JSON_AS_ASCII'] = False
-def kor_jsonify(somedict):
-    res = jsonify(somedict)
-    res.headers['Content-Type'] += '; charset=utf-8'
-    return res 
-
-usage_string = """\n
-    <h2>Available requests:</h2>
-    <p>GET '[api_root]/sections'</p>
-    <p>GET '[api_root]/sections/[section_id]'</p>
-    <p>GET '[api_root]/sections/[section_id]?page=[page_num]'</p>
-    <p>GET '[api_root]/articles'</p>
-    <p>GET '[api_root]/articles?id[]=1&id[]=3&id[]=7...'</p>
-    <p>GET '[api_root]/articles/[article_id]'</p>
-    """ 
-
-@app.route('/')
-def usage_notice():
-    return usage_string 
-
-@app.errorhandler(404)
-def error_notice(error):
-    return """\n
-    <h2>Invalid request.</h2>
-    """ + usage_string
 
 '''
-@app.errorhandler(500)
-def internel_server_error(error):
-    app.logger.error('Server Error: %s', (error))
-    return "Server Error"
-    '''
+CACHE_SERVER = None 
+if config.USING_CACHE is True:
+    CACHE_SERVER = redis.Redis("localhost")
+'''
 
-@app.route('/sections', methods=['GET'])
-def get_sections():
+def db_sections():
     open_db()
     
     section_col = column_name(TABLE_SECTIONS)
@@ -53,10 +24,16 @@ def get_sections():
             section[col_name] = section_tuple[section_col.index(col_name)]
         sections.append(section)
     
+    close_db()
     return kor_jsonify({'sections': sections})
+'''
+def db_sections():
+    if CACHE_SERVER is None:
+        return _db_sections()
+    return "hah"
+'''
 
-@app.route('/sections/<int:section_id>', methods=['GET'])
-def get_headlines(section_id):
+def db_headlines(section_id):
     open_db()
 
     headline_col = column_name(TABLE_HEADLINES)
@@ -72,6 +49,8 @@ def get_headlines(section_id):
             headline['written_date'] = headline['written_date'].strftime('%Y-%m-%d %H:%M')
         headlines.append(headline)
 
+    close_db()
+
     if len(headlines) == 0:
         abort(404)
 
@@ -83,8 +62,7 @@ def get_headlines(section_id):
     else:
         return kor_jsonify({'headlines': headlines})
 
-@app.route('/articles', methods=['GET'])
-def get_whole_articles():
+def db_whole_articles():
     open_db()
     
     article_col = column_name(TABLE_ARTICLES)
@@ -94,14 +72,6 @@ def get_whole_articles():
 
     # ID querying
     id_list = request.args.getlist('id[]')
-    if not id_list:
-        id_list = request.args.getlist('id%5B%5D')
-    '''
-    id_list_str = request.args.get('id')
-    id_list = None
-    if id_list_str is not None:
-        id_list = ast.literal_eval(id_list_str)
-    '''
 
     # Entire articles
     if id_list == []:
@@ -119,11 +89,11 @@ def get_whole_articles():
                     article[col_name] = article_tuple[article_col.index(col_name)]
                 articles.append(content_join(article))
 
+    close_db()
     
     return kor_jsonify({'articles': articles})
 
-@app.route('/articles/<int:article_id>', methods=['GET'])
-def get_article(article_id):
+def db_article(article_id):
     open_db()
 
     article_col = column_name(TABLE_ARTICLES)
@@ -132,6 +102,8 @@ def get_article(article_id):
     article = {}
     for col_name in article_col:
         article[col_name] = article_tuple[article_col.index(col_name)]
+
+    close_db()
 
     if len(article_tuple) == 0:
         abort(404)
@@ -175,6 +147,9 @@ def content_join(article_dict):
         res['content'] = content
     return res 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# to ensure unicode transmitted unbroken
+def kor_jsonify(somedict):
+    res = jsonify(somedict)
+    res.headers['Content-Type'] += '; charset=utf-8'
+    return res 
 

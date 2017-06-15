@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, abort, json, make_response, request
 # from dummy_db import sections, headlines, articles
-from v0_2.interact_db import open_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+from v0_2.interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
 
 app = Flask(__name__)
 
@@ -16,10 +16,10 @@ usage_string = """\n
     <p>GET '[api_root]/sections'</p>
     <p>GET '[api_root]/sections/[section_id]'</p>
     <p>GET '[api_root]/sections/[section_id]?page=[page_num]'</p>
-    <p>GET '[api_root]/articles'</p>
-    <p>GET '[api_root]/articles?id[]=1&id[]=3&id[]=7...'</p>
+    <p>GET '[api_root]/articles'<p>
+    <p>GET '[api_root]/articles?id=[[list, of, ids]]'<p>
     <p>GET '[api_root]/articles/[article_id]'</p>
-    """ 
+    """
 
 @app.route('/')
 def usage_notice():
@@ -30,13 +30,6 @@ def error_notice(error):
     return """\n
     <h2>Invalid request.</h2>
     """ + usage_string
-
-'''
-@app.errorhandler(500)
-def internel_server_error(error):
-    app.logger.error('Server Error: %s', (error))
-    return "Server Error"
-    '''
 
 @app.route('/sections', methods=['GET'])
 def get_sections():
@@ -53,6 +46,7 @@ def get_sections():
             section[col_name] = section_tuple[section_col.index(col_name)]
         sections.append(section)
     
+    close_db()
     return kor_jsonify({'sections': sections})
 
 @app.route('/sections/<int:section_id>', methods=['GET'])
@@ -68,9 +62,10 @@ def get_headlines(section_id):
         headline = {}
         for col_name in headline_col:
             headline[col_name] = headline_tuple[headline_col.index(col_name)]
-        if headline['written_date'] is not None:
-            headline['written_date'] = headline['written_date'].strftime('%Y-%m-%d %H:%M')
+        headline['written_date'] = headline['written_date'].strftime('%Y-%m-%d %H:%M')
         headlines.append(headline)
+
+    close_db()
 
     if len(headlines) == 0:
         abort(404)
@@ -94,8 +89,6 @@ def get_whole_articles():
 
     # ID querying
     id_list = request.args.getlist('id[]')
-    if not id_list:
-        id_list = request.args.getlist('id%5B%5D')
     '''
     id_list_str = request.args.get('id')
     id_list = None
@@ -119,6 +112,7 @@ def get_whole_articles():
                     article[col_name] = article_tuple[article_col.index(col_name)]
                 articles.append(content_join(article))
 
+    close_db()
     
     return kor_jsonify({'articles': articles})
 
@@ -132,6 +126,8 @@ def get_article(article_id):
     article = {}
     for col_name in article_col:
         article[col_name] = article_tuple[article_col.index(col_name)]
+
+    close_db()
 
     if len(article_tuple) == 0:
         abort(404)

@@ -1,6 +1,7 @@
 from url_crawl import extract_article_urls
-from parser import parse_article  
-from interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+from parser import parse_article, get_not_cached_title 
+from v0_2.interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+import threading
 
 def main():
     open_db()
@@ -27,6 +28,8 @@ def main():
                 headline['section_id'] = section_id
                 headline['article_id'] = next_article_id
                 headline['cached'] = 1
+                # TODO remove it later, when changing DB schemas.
+                headline['journal'] = data['journal']
 
                 # Caching 
                 article = filter_dict_with_tuple(article_cols, data)
@@ -40,6 +43,7 @@ def main():
                 headline['section_id'] = section_id
                 headline['cached'] = 0
                 headline['article_url'] = url
+                headline['title'] = get_not_cached_title(base_url, url)
 
             insert_into(TABLE_HEADLINES, headline)
 
