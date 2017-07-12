@@ -18,7 +18,7 @@ DEBUG_LOGGING = False
 CRAWL_THREADED = False
 
 # Number of urls to parse per spider
-CRAWL_CAPACITY = 30
+CRAWL_CAPACITY = 20
 
 # Max number of cached urls to check duplicates. recommend >= 200, at least 100.
 MAX_CACHED_URLS = 500

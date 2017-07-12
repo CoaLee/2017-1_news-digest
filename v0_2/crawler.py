@@ -1,7 +1,9 @@
 from url_crawl import extract_article_urls
 from parser import parse_article, get_not_cached_title 
-from v0_2.interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+from interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
 import threading
+import sys
+sys.path.append("/home/ubuntu/news_digest")
 
 def main():
     open_db()

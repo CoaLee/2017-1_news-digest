@@ -17,8 +17,8 @@ TABLE_SECTIONS = 'news_sections'
 TABLE_HEADLINES = 'section_headlines'
 TABLE_ARTICLES = 'articles'
 
-_db = None
-_cursor = None
+_db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
+_cursor = _db.cursor()
 
 def open_db():
     global _db, _cursor
@@ -104,8 +104,6 @@ def main():
     print(select_from(TABLE_ARTICLES))
     print(column_name(TABLE_HEADLINES))
     print(next_id(TABLE_ARTICLES))
-
-    close_db()
 
 if __name__ == '__main__':
     main()

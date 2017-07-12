@@ -1,5 +1,5 @@
 from flask import Flask, abort
-from v0_3.db_process import db_sections, db_headlines, db_whole_articles, db_article, db_force_close
+from v0_4.db_process import db_sections, db_headlines, db_whole_articles, db_article, db_force_close
 
 app = Flask(__name__)
 
@@ -42,10 +42,9 @@ def get_whole_articles():
 def get_article(article_id):
     return db_article(article_id)
 
-#@app.teardown_appcontext
+@app.teardown_appcontext
 def force_close(exception):
     db_force_close()
 
 if __name__ == '__main__':
     app.run(debug=True)
-

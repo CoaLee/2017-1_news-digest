@@ -1,0 +1,1513 @@
+2017-06-15 18:46:59,259| [PARSER] logging start in parser.py
+2017-06-15 18:46:59,269| [CRAWLER] ======== DB opened ========
+2017-06-15 18:49:21,275| [PARSER] logging start in parser.py
+2017-06-15 18:49:21,286| [CRAWLER] ======== DB opened ========
+2017-06-15 18:49:21,727| [CRAWLER] urls in section #1: 112. Required spiders: 4. Now starting spiders.
+2017-06-15 18:49:21,728| [CRAWLER] Spider 0 Working on section #1
+2017-06-15 18:49:21,728| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:21,729| [CRAWLER] Spider 1 Working on section #1
+2017-06-15 18:49:21,729| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:21,730| [CRAWLER] Spider 2 Working on section #1
+2017-06-15 18:49:21,731| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:21,733| [CRAWLER] Spider 3 Working on section #1
+2017-06-15 18:49:21,733| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,155| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,164| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,175| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,190| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,553| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,618| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,627| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:22,625| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,003| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,044| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,080| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,093| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,490| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:23,497| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,503| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:23,518| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,523| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:23,517| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:23,524| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,524| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,907| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,951| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,967| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:23,973| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,395| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,423| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,429| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,452| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,832| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,888| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,897| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:24,896| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,311| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,342| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,357| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,363| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,676| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:25,709| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,729| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:25,737| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,772| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:25,781| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,785| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:25,792| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:25,966| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,148| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,232| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,253| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,360| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,597| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,646| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,657| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,753| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:26,945| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,046| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,055| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,232| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,344| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,476| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,499| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,640| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:27,656| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,726| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:27,741| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,872| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:27,889| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:27,901| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:27,912| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,076| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,087| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,310| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,342| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,509| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,516| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,716| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,726| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,911| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:28,922| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,099| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,114| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,351| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,380| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,530| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,563| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,756| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:29,772| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,769| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:29,777| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,951| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:29,964| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:29,957| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:29,965| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,155| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,160| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,385| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,425| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,543| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,572| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,803| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,813| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,976| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:30,989| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:31,192| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:31,425| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:31,430| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:31,493| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:31,735| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:31,750| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:31,743| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:31,751| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:31,793| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:31,793| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,005| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,070| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,285| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,369| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,428| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,581| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,660| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,728| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,880| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:32,942| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:33,004| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:33,227| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:33,241| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:33,281| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:33,344| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:33,352| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:33,579| [CRAWLER] 5 urls parsed
+2017-06-15 18:49:33,579| [PARSER] requests.get(article_URL)
+2017-06-15 18:49:33,757| [CRAWLER] 112 articles digested, now storing into DB
+2017-06-15 18:49:33,770| [CRAWLER] Successfully stored.
+2017-06-15 18:51:16,309| [PARSER] logging start in parser.py
+2017-06-15 18:51:16,319| [CRAWLER] ======== DB opened ========
+2017-06-15 18:51:16,419| [CRAWLER] urls in section #1: 112. Required spiders: 4. Now starting spiders.
+2017-06-15 18:51:16,419| [CRAWLER] Spider 0 Working on section #1
+2017-06-15 18:51:16,419| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:16,421| [CRAWLER] Spider 1 Working on section #1
+2017-06-15 18:51:16,421| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:16,422| [CRAWLER] Spider 2 Working on section #1
+2017-06-15 18:51:16,422| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:16,423| [CRAWLER] Spider 3 Working on section #1
+2017-06-15 18:51:16,423| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:16,837| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:16,845| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:16,870| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:16,882| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,295| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,301| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,317| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,328| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,765| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,785| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,793| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:17,815| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,189| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:18,205| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,228| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:18,242| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,233| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:18,243| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,242| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:18,244| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,573| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,631| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,675| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,678| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:18,981| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,039| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,114| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,145| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,357| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,417| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,506| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,560| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,791| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,817| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,965| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:19,979| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,169| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:20,185| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,198| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:20,204| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,348| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:20,365| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,396| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:20,404| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,583| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,598| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,834| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:20,871| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,038| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,052| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,232| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,255| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,439| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,470| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,647| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,662| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,890| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:21,900| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,089| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,097| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,288| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:22,300| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,292| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:22,301| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,497| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:22,508| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,489| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:22,509| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,691| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,700| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,929| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:22,948| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,101| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,132| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,318| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,351| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,515| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,528| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,719| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,745| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,969| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:23,979| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,161| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,169| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,371| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:24,389| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,400| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:24,400| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,566| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:24,572| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,581| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:24,592| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,777| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:24,814| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,030| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,035| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,187| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,235| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,415| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,448| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,592| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,645| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:25,862| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,061| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,080| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,190| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,372| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:26,377| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,376| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:26,378| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,475| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:26,484| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,649| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,785| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,954| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:26,983| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,095| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,271| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,294| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,380| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,595| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,603| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,664| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,952| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:27,981| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:27,981| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,020| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:28,020| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,240| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:28,259| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,431| [CRAWLER] 112 articles digested, now storing into DB
+2017-06-15 18:51:28,445| [CRAWLER] Successfully stored.
+2017-06-15 18:51:28,546| [CRAWLER] urls in section #2: 78. Required spiders: 3. Now starting spiders.
+2017-06-15 18:51:28,546| [CRAWLER] Spider 0 Working on section #2
+2017-06-15 18:51:28,546| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,548| [CRAWLER] Spider 1 Working on section #2
+2017-06-15 18:51:28,548| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,549| [CRAWLER] Spider 2 Working on section #2
+2017-06-15 18:51:28,549| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,916| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,918| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:28,924| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:29,331| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:29,334| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:29,340| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:29,690| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:29,715| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:29,719| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,079| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:30,091| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,091| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:30,092| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,096| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:30,096| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,461| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,505| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,510| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,803| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,869| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:30,877| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,145| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,218| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,226| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,504| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,570| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,595| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,767| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:31,772| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,930| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:31,940| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:31,937| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:31,944| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,091| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,311| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,312| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,448| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,636| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,668| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,745| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,981| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:32,996| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:33,069| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:33,350| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:33,379| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:33,435| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:33,436| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:33,696| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:33,713| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:33,724| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:33,731| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:33,769| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,010| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,098| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,115| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,354| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,460| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,515| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,649| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,826| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:34,831| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,125| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:35,128| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,128| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,380| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:35,389| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,395| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,703| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,706| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,965| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:35,965| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:36,228| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:36,230| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:36,484| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:36,491| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:36,493| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:36,790| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:36,790| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:36,796| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,041| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,056| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,318| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,325| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,585| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,590| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,872| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:37,892| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:37,892| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:38,118| [CRAWLER] 5 urls parsed
+2017-06-15 18:51:38,129| [PARSER] requests.get(article_URL)
+2017-06-15 18:51:38,299| [CRAWLER] 78 articles digested, now storing into DB
+2017-06-15 18:51:38,309| [CRAWLER] Successfully stored.
+2017-06-15 18:51:38,313| [CRAWLER] ======== DB closed ========
+2017-06-15 19:11:28,053| [PARSER] logging start in parser.py
+2017-06-15 19:11:28,065| [CRAWLER] ======== DB opened ========
+2017-06-15 19:12:07,436| [PARSER] logging start in parser.py
+2017-06-15 19:12:07,447| [CRAWLER] ======== DB opened ========
+2017-06-15 19:12:07,702| [CRAWLER] urls in section #2: 78. Required spiders: 3. Now starting spiders.
+2017-06-15 19:12:07,702| [CRAWLER] Spider 0 Working on section #2
+2017-06-15 19:12:07,702| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:07,703| [CRAWLER] Spider 1 Working on section #2
+2017-06-15 19:12:07,704| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:07,705| [CRAWLER] Spider 2 Working on section #2
+2017-06-15 19:12:07,705| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,072| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,085| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,089| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,372| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,440| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,446| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,685| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,778| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:08,793| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,064| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:09,081| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,128| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:09,137| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,142| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:09,142| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,331| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,475| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,502| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,628| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,826| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,860| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:09,990| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,160| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,205| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,322| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,519| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,527| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,644| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:10,654| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,884| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:10,884| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:10,903| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:10,903| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,000| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,214| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,267| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,323| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,523| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,595| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,661| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,861| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:11,960| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,028| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,197| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,281| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,353| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:12,358| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,510| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:12,525| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,611| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:12,625| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,679| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:12,862| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,012| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,037| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,197| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,334| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,372| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,496| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,699| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:13,705| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,027| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,030| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:14,030| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,291| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,295| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:14,295| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,560| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,563| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,811| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:14,828| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,130| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,134| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,393| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:15,393| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,398| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,653| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,656| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:15,656| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,903| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:15,915| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:16,170| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:16,174| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:16,471| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:16,473| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:16,736| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:16,737| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:16,737| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:17,003| [CRAWLER] 5 urls parsed
+2017-06-15 19:12:17,003| [PARSER] requests.get(article_URL)
+2017-06-15 19:12:17,163| [CRAWLER] 78 articles digested, now storing into DB
+2017-06-15 19:12:17,173| [CRAWLER] Successfully stored.
+2017-06-15 19:12:17,185| [CRAWLER] ======== DB closed ========
+2017-06-15 19:13:22,016| [PARSER] logging start in parser.py
+2017-06-15 19:13:22,029| [CRAWLER] ======== DB opened ========
+2017-06-15 19:13:22,135| [CRAWLER] urls in section #1: 112. Required spiders: 4. Now starting spiders.
+2017-06-15 19:13:22,136| [CRAWLER] Spider 0 Working on section #1
+2017-06-15 19:13:22,136| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:22,137| [CRAWLER] Spider 1 Working on section #1
+2017-06-15 19:13:22,138| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:22,139| [CRAWLER] Spider 2 Working on section #1
+2017-06-15 19:13:22,139| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:22,141| [CRAWLER] Spider 3 Working on section #1
+2017-06-15 19:13:22,141| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:22,569| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:22,609| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:22,623| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:22,621| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,028| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,060| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,076| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,079| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,528| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,542| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,546| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,566| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,970| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:24,001| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:23,994| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:24,002| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,010| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:24,015| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,015| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:24,016| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,435| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,442| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,469| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,471| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,909| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,947| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,960| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:24,967| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,299| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,394| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,403| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,403| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,573| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,833| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,856| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,893| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:25,982| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:25,996| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,242| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:26,277| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,291| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:26,291| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,317| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:26,329| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,378| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,691| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,706| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,766| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:26,839| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,079| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,139| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,165| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,258| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,441| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,546| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,557| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,736| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,858| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:27,965| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,008| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,151| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:28,169| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,248| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:28,265| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,370| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:28,384| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,426| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:28,441| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,564| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,667| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,783| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:28,868| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,055| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,065| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,191| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,304| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,448| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,493| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,588| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,701| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,954| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:29,968| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,007| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,121| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,311| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:30,333| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,344| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:30,348| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,436| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:30,452| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,548| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:30,560| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,692| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,739| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,929| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:30,989| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,112| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,183| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,329| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,376| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,533| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,741| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,753| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:31,892| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,101| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,107| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,189| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:32,189| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,413| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:32,424| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,418| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:32,425| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,718| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,757| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:32,760| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,058| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,122| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,132| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,309| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,454| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,464| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,581| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,751| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,772| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:33,857| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:33,868| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,124| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:34,141| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,144| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:34,145| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,403| [CRAWLER] 112 articles digested, now storing into DB
+2017-06-15 19:13:34,416| [CRAWLER] Successfully stored.
+2017-06-15 19:13:34,526| [CRAWLER] urls in section #2: 78. Required spiders: 3. Now starting spiders.
+2017-06-15 19:13:34,526| [CRAWLER] Spider 0 Working on section #2
+2017-06-15 19:13:34,526| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,527| [CRAWLER] Spider 1 Working on section #2
+2017-06-15 19:13:34,527| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,529| [CRAWLER] Spider 2 Working on section #2
+2017-06-15 19:13:34,529| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,880| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,894| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:34,909| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:35,302| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:35,313| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:35,317| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:35,693| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:35,695| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:35,701| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,034| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:36,041| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,077| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:36,078| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,081| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:36,082| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,483| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,496| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,498| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,869| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,873| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:36,876| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:37,228| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:37,262| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:37,263| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:37,643| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:37,676| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:37,683| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:37,963| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:37,981| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,049| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:38,050| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:38,050| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,050| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,242| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,384| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,450| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,657| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,712| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,774| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:38,974| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,065| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,116| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,265| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,378| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,497| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,675| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:39,688| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,711| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:39,716| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:39,817| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:39,827| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,022| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,033| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,141| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,347| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,374| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,523| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,727| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,735| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:40,845| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,068| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,147| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,275| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:41,275| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,372| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:41,376| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,520| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,630| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,740| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,849| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:41,959| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,072| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,184| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,290| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,406| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:42,412| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,545| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:42,552| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,657| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,763| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,876| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:42,975| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:43,099| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:43,194| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:43,316| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:43,415| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:43,592| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:43,601| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:43,656| [CRAWLER] 5 urls parsed
+2017-06-15 19:13:43,656| [PARSER] requests.get(article_URL)
+2017-06-15 19:13:43,881| [CRAWLER] 78 articles digested, now storing into DB
+2017-06-15 19:13:43,891| [CRAWLER] Successfully stored.
+2017-06-15 19:13:43,895| [CRAWLER] ======== DB closed ========
+2017-06-15 19:13:53,519| [PARSER] logging start in parser.py
+2017-06-15 19:13:53,530| [CRAWLER] ======== DB opened ========
+2017-06-15 19:13:53,761| [CRAWLER] ======== DB closed ========
+2017-06-15 19:13:55,801| [PARSER] logging start in parser.py
+2017-06-15 19:13:55,812| [CRAWLER] ======== DB opened ========
+2017-06-15 19:13:56,075| [CRAWLER] ======== DB closed ========
+2017-06-15 19:13:57,490| [PARSER] logging start in parser.py
+2017-06-15 19:13:57,502| [CRAWLER] ======== DB opened ========
+2017-06-15 19:13:57,721| [CRAWLER] ======== DB closed ========
+2017-06-15 19:14:51,525| [PARSER] logging start in parser.py
+2017-06-15 19:14:51,536| [CRAWLER] ======== DB opened ========
+2017-06-15 19:14:51,714| [CRAWLER] ======== DB closed ========
+2017-06-15 19:15:01,576| [PARSER] logging start in parser.py
+2017-06-15 19:15:01,587| [CRAWLER] ======== DB opened ========
+2017-06-15 19:15:01,845| [CRAWLER] ======== DB closed ========
+2017-06-15 19:15:04,743| [PARSER] logging start in parser.py
+2017-06-15 19:15:04,754| [CRAWLER] ======== DB opened ========
+2017-06-15 19:15:04,979| [CRAWLER] ======== DB closed ========
+2017-06-15 19:15:06,099| [PARSER] logging start in parser.py
+2017-06-15 19:15:06,109| [CRAWLER] ======== DB opened ========
+2017-06-15 19:15:06,328| [CRAWLER] ======== DB closed ========
+2017-06-15 19:15:07,693| [PARSER] logging start in parser.py
+2017-06-15 19:15:07,703| [CRAWLER] ======== DB opened ========
+2017-06-15 19:15:07,922| [CRAWLER] ======== DB closed ========
+2017-06-15 19:15:09,275| [PARSER] logging start in parser.py
+2017-06-15 19:15:09,285| [CRAWLER] ======== DB opened ========
+2017-06-15 19:15:09,515| [CRAWLER] ======== DB closed ========
+2017-06-15 19:15:10,437| [PARSER] logging start in parser.py
+2017-06-15 19:15:10,448| [CRAWLER] ======== DB opened ========
+2017-06-15 19:15:10,675| [CRAWLER] ======== DB closed ========
+2017-06-15 19:15:11,539| [PARSER] logging start in parser.py
+2017-06-15 19:15:11,555| [CRAWLER] ======== DB opened ========
+2017-06-15 19:15:11,781| [CRAWLER] ======== DB closed ========
+2017-06-15 19:16:45,912| [PARSER] logging start in parser.py
+2017-06-15 19:16:45,923| [CRAWLER] ======== DB opened ========
+2017-06-15 19:16:46,029| [CRAWLER] urls in section #1: 112. Required spiders: 4. Now starting spiders.
+2017-06-15 19:16:46,029| [CRAWLER] Spider 0 Working on section #1
+2017-06-15 19:16:46,029| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,030| [CRAWLER] Spider 1 Working on section #1
+2017-06-15 19:16:46,031| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,032| [CRAWLER] Spider 2 Working on section #1
+2017-06-15 19:16:46,032| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,034| [CRAWLER] Spider 3 Working on section #1
+2017-06-15 19:16:46,034| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,421| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,483| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,490| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,496| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,823| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,905| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,912| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:46,937| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,186| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,339| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,382| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,391| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,530| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:47,530| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,748| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:47,768| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,763| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:47,769| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,813| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:47,828| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:47,924| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,123| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,127| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,252| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,387| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,522| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,551| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,685| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,801| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,907| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:48,954| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,125| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,191| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,369| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,398| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,544| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,608| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:49,608| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,806| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:49,806| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,831| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:49,831| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:49,933| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:49,951| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,001| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,214| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,224| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,395| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,447| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,657| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,715| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,779| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:50,869| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,075| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,110| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,189| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,255| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,553| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,565| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,653| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,700| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:51,700| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,909| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:51,910| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:51,945| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:51,945| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,070| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:52,092| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,084| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,282| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,346| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,535| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,571| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,679| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,752| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,926| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:52,934| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,096| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,149| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,312| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,325| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,564| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,593| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,737| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,765| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:53,772| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,974| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:53,976| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:53,987| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:53,989| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,124| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:54,141| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,155| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,387| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,417| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,564| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,592| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,774| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,806| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:54,988| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,000| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,186| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,423| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,431| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,512| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,712| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:55,725| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,751| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:55,806| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:55,812| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,065| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:56,065| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,097| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,225| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,406| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,452| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,522| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,716| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,786| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,827| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:56,990| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,092| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,125| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,249| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,419| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:57,434| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,490| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:57,490| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,582| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:57,592| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,833| [CRAWLER] 112 articles digested, now storing into DB
+2017-06-15 19:16:57,847| [CRAWLER] Successfully stored.
+2017-06-15 19:16:57,948| [CRAWLER] urls in section #2: 78. Required spiders: 3. Now starting spiders.
+2017-06-15 19:16:57,949| [CRAWLER] Spider 0 Working on section #2
+2017-06-15 19:16:57,949| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,950| [CRAWLER] Spider 1 Working on section #2
+2017-06-15 19:16:57,950| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:57,951| [CRAWLER] Spider 2 Working on section #2
+2017-06-15 19:16:57,951| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:58,299| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:58,312| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:58,314| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:58,699| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:58,712| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:58,718| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,074| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,077| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,083| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,420| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:59,439| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,447| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:59,455| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,461| [CRAWLER] 5 urls parsed
+2017-06-15 19:16:59,461| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,838| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,865| [PARSER] requests.get(article_URL)
+2017-06-15 19:16:59,869| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,177| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,218| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,233| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,550| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,585| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,587| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,981| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,984| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:00,998| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:01,358| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:01,364| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:01,360| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:01,366| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:01,364| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:01,367| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:01,729| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:01,745| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:01,760| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,129| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,151| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,157| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,500| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,502| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,515| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,861| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,871| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:02,876| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,272| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:03,273| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:03,277| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,277| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,277| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:03,279| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,622| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,645| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,647| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,986| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:03,999| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:04,011| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:04,392| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:04,393| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:04,409| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:04,758| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:04,773| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,028| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:05,033| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,032| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:05,034| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,320| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,327| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,597| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,598| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,861| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:05,868| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,120| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,127| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,391| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:06,391| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,395| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:06,395| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,695| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,696| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,957| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:06,965| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:07,210| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:07,228| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:07,482| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:07,487| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:07,762| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:07,762| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:07,778| [CRAWLER] 5 urls parsed
+2017-06-15 19:17:07,778| [PARSER] requests.get(article_URL)
+2017-06-15 19:17:08,038| [CRAWLER] 78 articles digested, now storing into DB
+2017-06-15 19:17:08,048| [CRAWLER] Successfully stored.
+2017-06-15 19:17:08,053| [CRAWLER] ======== DB closed ========
+2017-06-15 19:19:33,668| [PARSER] logging start in parser.py
+2017-06-15 19:19:33,678| [CRAWLER] ======== DB opened ========
+2017-06-15 19:19:33,871| [CRAWLER] ======== DB closed ========
+2017-06-15 19:19:35,058| [PARSER] logging start in parser.py
+2017-06-15 19:19:35,069| [CRAWLER] ======== DB opened ========
+2017-06-15 19:19:35,250| [CRAWLER] ======== DB closed ========
+2017-06-15 19:58:21,185| [PARSER] logging start in parser.py
+2017-06-15 19:58:21,196| [CRAWLER] ======== DB opened ========
+2017-06-15 19:58:21,304| [CRAWLER] url duplication check Starts
+2017-06-15 19:58:21,304| [CRAWLER] url duplication check Finished
+2017-06-15 19:58:21,304| [CRAWLER] urls in section #1: 113. Required spiders: 4. Now starting spiders.
+2017-06-15 19:58:21,305| [CRAWLER] Spider 0 Working on section #1
+2017-06-15 19:58:21,305| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:21,306| [CRAWLER] Spider 1 Working on section #1
+2017-06-15 19:58:21,306| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:21,307| [CRAWLER] Spider 2 Working on section #1
+2017-06-15 19:58:21,308| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:21,309| [CRAWLER] Spider 3 Working on section #1
+2017-06-15 19:58:21,309| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:21,703| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:21,724| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:21,748| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:21,755| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,145| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,161| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,168| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,180| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,614| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,637| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,651| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:22,644| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,048| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:23,057| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,068| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:23,079| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,079| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:23,081| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,086| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:23,086| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,481| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,488| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,499| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,495| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,925| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,943| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,959| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:23,962| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,336| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,359| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,367| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,387| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,801| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,816| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,823| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:24,838| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,221| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:25,244| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,236| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:25,246| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,253| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:25,253| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,257| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:25,257| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,652| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,661| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,658| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:25,679| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,129| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,135| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,143| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,142| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,483| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,550| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,553| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,590| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:26,961| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,004| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,007| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,026| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,341| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:27,376| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,416| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:27,433| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,450| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:27,450| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,459| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:27,462| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,772| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,891| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,899| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:27,909| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,153| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,282| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,303| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,328| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,546| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,708| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,725| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,732| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:28,976| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,154| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,180| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,174| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,395| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:29,408| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,573| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:29,596| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,598| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:29,598| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,594| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:29,604| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,769| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:29,988| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,066| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,082| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,195| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,364| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,452| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,481| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,675| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,789| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,846| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:30,888| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,188| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,318| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,326| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,515| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:31,525| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,636| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:31,636| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,638| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:31,638| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,824| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:31,936| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,199| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,227| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,249| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,482| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,539| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,580| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,798| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,846| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:32,871| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:33,153| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:33,154| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:33,210| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:33,213| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:33,216| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:33,509| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:33,509| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:33,637| [CRAWLER] 113 articles digested, now storing into DB
+2017-06-15 19:58:33,651| [CRAWLER] Successfully stored.
+2017-06-15 19:58:33,733| [CRAWLER] url duplication check Starts
+2017-06-15 19:58:33,733| [CRAWLER] url duplication check Finished
+2017-06-15 19:58:33,733| [CRAWLER] urls in section #2: 78. Required spiders: 3. Now starting spiders.
+2017-06-15 19:58:33,733| [CRAWLER] Spider 0 Working on section #2
+2017-06-15 19:58:33,733| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:33,735| [CRAWLER] Spider 1 Working on section #2
+2017-06-15 19:58:33,735| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:33,736| [CRAWLER] Spider 2 Working on section #2
+2017-06-15 19:58:33,736| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,111| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,123| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,126| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,451| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,467| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,481| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,818| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,821| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:34,824| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,186| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:35,193| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,215| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:35,223| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,222| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:35,224| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,564| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,573| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,577| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,915| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,927| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:35,933| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:36,308| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:36,318| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:36,324| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:36,664| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:36,668| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:36,682| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,001| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:37,021| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,027| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:37,028| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,044| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:37,044| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,414| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,430| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,432| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,779| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,782| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:37,786| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,126| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,129| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,133| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,507| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,522| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,524| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,857| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:38,867| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,867| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:38,869| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:38,873| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:38,873| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,212| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,214| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,228| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,579| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,611| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,618| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,916| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,965| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:39,965| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:40,264| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:40,281| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:40,536| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:40,540| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:40,540| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:40,542| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:40,820| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:40,826| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,066| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,074| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,314| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,319| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,560| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,565| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,833| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:41,844| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:41,844| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:41,845| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,079| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,083| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,329| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,332| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,572| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,579| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,856| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:42,861| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:43,100| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:43,105| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:43,104| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:43,106| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:43,351| [CRAWLER] 78 articles digested, now storing into DB
+2017-06-15 19:58:43,361| [CRAWLER] Successfully stored.
+2017-06-15 19:58:43,365| [CRAWLER] ======== DB closed ========
+2017-06-15 19:58:45,742| [PARSER] logging start in parser.py
+2017-06-15 19:58:45,752| [CRAWLER] ======== DB opened ========
+2017-06-15 19:58:45,847| [CRAWLER] url duplication check Starts
+2017-06-15 19:58:45,848| [CRAWLER] url duplication check Finished
+2017-06-15 19:58:45,848| [CRAWLER] urls in section #1: 113. Required spiders: 4. Now starting spiders.
+2017-06-15 19:58:45,848| [CRAWLER] Spider 0 Working on section #1
+2017-06-15 19:58:45,848| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:45,850| [CRAWLER] Spider 1 Working on section #1
+2017-06-15 19:58:45,850| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:45,851| [CRAWLER] Spider 2 Working on section #1
+2017-06-15 19:58:45,851| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:45,853| [CRAWLER] Spider 3 Working on section #1
+2017-06-15 19:58:45,853| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,238| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,261| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,280| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,287| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,683| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,696| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,704| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:46,710| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,100| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,147| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,164| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,162| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,528| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:47,557| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,569| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:47,577| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,569| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:47,578| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,580| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:47,580| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,964| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,977| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,984| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:47,995| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,411| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,426| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,454| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,466| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,849| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,894| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,902| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:48,920| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,319| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,370| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,380| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,377| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,753| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:49,761| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,776| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:49,790| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,783| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:49,791| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:49,802| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:49,803| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,089| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,200| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,206| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,226| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,597| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,631| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,672| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:50,675| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,057| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,073| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,080| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,099| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,506| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,523| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,551| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,561| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,937| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:51,944| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,976| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:51,986| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,988| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:51,988| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:51,995| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:51,998| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,231| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,409| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,431| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,477| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,694| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,800| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,862| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:52,908| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,152| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,182| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,267| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,298| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,584| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,596| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,746| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:53,759| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,002| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:54,025| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,044| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:54,057| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,112| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:54,126| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,165| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:54,180| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,431| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,496| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,554| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,638| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,867| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,898| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:54,929| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,072| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,247| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,293| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,366| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,575| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,683| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,752| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:55,844| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,066| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:56,081| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,144| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:56,157| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,214| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:56,215| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,303| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,571| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,644| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,816| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,867| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:56,932| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,160| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,174| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,223| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,469| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,492| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,530| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:57,530| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,832| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:57,841| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:57,853| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:58,080| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:58,081| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:58,211| [CRAWLER] 113 articles digested, now storing into DB
+2017-06-15 19:58:58,225| [CRAWLER] Successfully stored.
+2017-06-15 19:58:58,311| [CRAWLER] url duplication check Starts
+2017-06-15 19:58:58,311| [CRAWLER] url duplication check Finished
+2017-06-15 19:58:58,311| [CRAWLER] urls in section #2: 78. Required spiders: 3. Now starting spiders.
+2017-06-15 19:58:58,311| [CRAWLER] Spider 0 Working on section #2
+2017-06-15 19:58:58,311| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:58,313| [CRAWLER] Spider 1 Working on section #2
+2017-06-15 19:58:58,313| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:58,314| [CRAWLER] Spider 2 Working on section #2
+2017-06-15 19:58:58,314| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:58,688| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:58,694| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:58,711| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,053| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,057| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,062| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,378| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,413| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,415| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,796| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:59,811| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,815| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:59,815| [PARSER] requests.get(article_URL)
+2017-06-15 19:58:59,811| [CRAWLER] 5 urls parsed
+2017-06-15 19:58:59,816| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,156| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,170| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,175| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,496| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,513| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,532| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,915| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,917| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:00,920| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:01,238| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:01,266| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:01,283| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:01,626| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:01,634| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:01,634| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:01,635| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:01,631| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:01,636| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,005| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,018| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,032| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,342| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,376| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,380| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,708| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,719| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:02,725| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,106| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,110| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,111| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,437| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:03,457| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,462| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:03,462| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,466| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:03,466| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,803| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,815| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:03,818| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,179| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,204| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,208| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,512| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,553| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,561| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,908| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:04,910| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,189| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:05,189| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,195| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:05,195| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,430| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,437| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,674| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,679| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,922| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:05,925| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,174| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,177| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,449| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:06,461| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,464| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:06,464| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,698| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,707| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,940| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:06,953| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:07,197| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:07,199| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:07,478| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:07,481| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:07,724| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:07,726| [CRAWLER] 5 urls parsed
+2017-06-15 19:59:07,726| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:07,726| [PARSER] requests.get(article_URL)
+2017-06-15 19:59:07,968| [CRAWLER] 78 articles digested, now storing into DB
+2017-06-15 19:59:07,978| [CRAWLER] Successfully stored.
+2017-06-15 19:59:07,989| [CRAWLER] ======== DB closed ========

@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, abort, json, make_response
 # from dummy_db import sections, headlines, articles
-from interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
+from v0_1.interact_db import open_db, close_db, next_id, insert_into, select_from, column_name, TABLE_SECTIONS, TABLE_HEADLINES, TABLE_ARTICLES
 
 app = Flask(__name__)
 

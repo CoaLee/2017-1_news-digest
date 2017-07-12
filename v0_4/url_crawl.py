@@ -1,5 +1,4 @@
 # modifed from http://m.blog.naver.com/htk1019
-
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -21,20 +20,20 @@ def ext_news_urls(soup):
     for anchor in anchors:
         url_frag = anchor['href']
 
-        if "aid" in url_frag:
+        if "http://" in url_frag:
             news_urls.append(url_frag)
         else :
             continue
 
     return news_urls
 
-def extract_article_urls(base_url):
+def extract_article_urls(base_url, enzyme):
     article_urls = []
 
     req = requests.get(base_url)
     soup = BeautifulSoup(req.text, 'lxml')
 
-    main_soup = soup.find_all('div', id='main_content')[0]
+    main_soup = soup.find_all('div', id=enzyme['links_body'])[0]
 
     urls = ext_news_urls(main_soup)
     article_urls += urls

@@ -13,8 +13,8 @@ USER = 'root'
 DATABASE = 'news_digest'
 PASSWORD = '101341'
 
-TABLE_SECTIONS = 'news_sections'
-TABLE_WHOLE_ARTS = 'whole_articles'
+TABLE_SECTIONS = 'sections'
+TABLE_WHOLE_ARTS = 'whole_articles_v4'
 
 _db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
 _cursor = _db.cursor()
@@ -38,7 +38,8 @@ def open_db():
 def close_db():
     global _db, _cursor
 
-    return
+    _db.commit()
+
     close_lock.acquire()
     if CACHE_SERVER.decr(key_DB_request) == 0:
         if _cursor != None:

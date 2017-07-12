@@ -86,7 +86,8 @@ if __name__ == '__main__':
     handler = RotatingFileHandler('foo.log', maxBytes=10000, backupCount=1)
     handler.setLevel(logging.INFO)
     app.logger.addHandler(handler)
-    app.run(host='0.0.0.0', debug=True)
+    #app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port=80, debug=True)
     '''
     gm = TlsSMTPHandler(("smtp.gmail.com", 587), 'coaleeyong@gmail.com', ADMINS, 'Error found!', (EMAIL_ID, EMAIL_PW))
     gm.setLevel(logging.ERROR)

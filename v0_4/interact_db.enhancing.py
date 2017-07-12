@@ -2,8 +2,6 @@ import MySQLdb
 import config as CONFIG
 import redis
 from multiprocessing import Lock
-from flask import Flask
-
 
 CACHE_SERVER = None 
 if CONFIG.USING_CACHE is True:
@@ -16,29 +14,30 @@ PASSWORD = '101341'
 TABLE_SECTIONS = 'news_sections'
 TABLE_WHOLE_ARTS = 'whole_articles'
 
-_db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
-_cursor = _db.cursor()
+_db = None
+_cursor = None
 key_DB_request = "key_DB_request"
 open_lock = Lock()
 close_lock = Lock()
 
 section_col = ('id', 'section_name', 'base_url')
-headline_col = ('id', 'section_id', 'title', 'thumbnail', 'cached', 'article_url', 'written_date', 'journal')
-article_col = ('id', 'written_date', 'textbody', 'img_pos', 'img_urls', 'title', 'journal')
+headline_col = ('id', 'section_id', 'title', 'thumbnail', 'cached', 'article_id', 'article_url', 'written_date', 'journal')
+article_col = ('id', 'written_date', 'modified_date', 'textbody', 'img_pos', 'img_urls', 'title', 'journal')
 
 def open_db():
     global _db, _cursor
 
     open_lock.acquire()
     if CACHE_SERVER.incr(key_DB_request) == 1:
-        _db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
-        _cursor = _db.cursor()
+        if _db == None:
+            _db = MySQLdb.connect(user=USER, passwd=PASSWORD, db=DATABASE, charset='utf8')
+        if _cursor == None:
+            _cursor = _db.cursor()
     open_lock.release()
 
 def close_db():
     global _db, _cursor
 
-    return
     close_lock.acquire()
     if CACHE_SERVER.decr(key_DB_request) == 0:
         if _cursor != None:
@@ -78,12 +77,8 @@ def query_key_value_builder(data_dict):
     return query
 
 def insert_into(table, data):
-    open_db()
-
     query = "INSERT INTO {} {};".format(table, query_key_value_builder(data))
     _cursor.execute(query)
-
-    close_db()
 
 def query_key_values_builder(data_cols, data_dict_list):
     key_q = '(' 
@@ -116,17 +111,11 @@ def query_key_values_builder(data_cols, data_dict_list):
     return query
 
 def insert_into_many(table, cols, data_list):
-    open_db()
-
     query = "INSERT INTO {} {};".format(table, query_key_values_builder(cols, data_list))
     _cursor.execute(query)
 
-    close_db()
-
 # TODO for rows
 def select_from(table, cond=None):
-    open_db()
-
     query = 'SELECT * FROM {}'.format(table)
     if cond != None:
         query += ' WHERE {};'.format(cond)
@@ -134,12 +123,9 @@ def select_from(table, cond=None):
     _cursor.execute(query)
 
     result = _cursor.fetchall()
-
-    close_db()
     return result
 
 def column_name(table):
-    open_db()
     query = 'SELECT column_name FROM information_schema.columns\
             WHERE table_name = "{}" AND table_schema = "{}";'\
             .format(table, DATABASE)
@@ -153,28 +139,20 @@ def column_name(table):
     for col_tuple in columns:
         result += col_tuple
 
-    close_db()
-
     return result
 
 def next_id(table):
-    open_db()
     query = 'SELECT auto_increment FROM information_schema.tables\
             WHERE table_name = "{}" AND table_schema = "{}";'\
             .format(table, DATABASE)
 
     _cursor.execute(query)
 
-    close_db()
     return _cursor.fetchone()[0]
 
 def reset_table(table):
-    open_db()
-
     query = 'DELETE FROM {}; ALTER TABLE {} AUTO_INCREMENT=1;'.format(table, table)
     _cursor.execute(query)
-
-    close_db()
 
 def main():
     open_db()

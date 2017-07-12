@@ -1,5 +1,5 @@
 # Latest api version
-LATEST_API = 'v0.2'
+LATEST_API = 'v0.3'
 
 # Cron schedule timing(second)
 CRAWL_INTERVAL = 5
@@ -17,5 +17,10 @@ DEBUG_LOGGING = False
 # Threaded Crawling
 CRAWL_THREADED = False
 
+# Number of urls to parse per spider
+CRAWL_CAPACITY = 20
 
-TEST_TEXT = "I'm in API V0.2"
+# Max number of cached urls to check duplicates. recommend >= 200, at least 100.
+MAX_CACHED_URLS = 500
+
+TEST_TEXT = "I'm Here in version folder"

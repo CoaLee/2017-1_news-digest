@@ -1,5 +1,5 @@
 from flask import jsonify, request, abort
-from v0_3.interact_db import open_db, close_db, force_close_db, column_name, insert_into, select_from, section_col, headline_col, article_col, TABLE_SECTIONS, TABLE_WHOLE_ARTS
+from v0_4.interact_db import open_db, close_db, force_close_db, column_name, insert_into, select_from, section_col, headline_col, article_col, TABLE_SECTIONS, TABLE_WHOLE_ARTS
 import config as CONFIG
 
 

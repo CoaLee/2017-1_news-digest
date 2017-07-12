@@ -1,23 +1,25 @@
 import requests
 import re
 from bs4 import BeautifulSoup, Comment
+import logging
 
-enzyme = {
-    'title': 'articleTitle',
-    'article_body': 'articleBodyContents',
-    'written_date': 't11',
-    'journal': 'press_logo',
-    'image': 'end_photo_org'
-}
+handler_crawllog = logging.FileHandler("log_crawl.log")
+handler_crawllog.setFormatter(logging.Formatter("%(asctime)s| %(message)s"))
+mylogger = logging.getLogger('mylogger')
+mylogger.setLevel(logging.DEBUG)
+mylogger.addHandler(handler_crawllog)
+
+mylogger.debug("[PARSER] logging start in parser.py")
+
 IMG_TMP_TAG = '[<img]>'
 
-def get_title(soup):
+def get_title(soup, enzyme):
     title = ''
     for item in soup.find_all(id=enzyme['title']):
         title = item.text
     return title
 
-def get_date(soup):
+def get_date(soup, enzyme):
     date = ''
     # TODO datetime object
     for tmp_date in soup.find_all(class_='t11'):
@@ -25,50 +27,13 @@ def get_date(soup):
         break
     return date
 
-def get_journal(soup):
+def get_journal(soup, enzyme):
     journal = ''
     for item in soup.find_all(class_=enzyme['journal']):
         journal = item.find('img')['title']
     return journal
 
-
-def get_textbody(soup):
-    text = ''
-    
-    for item in soup.find_all('div', id=enzyme['article_body']):
-        # remove <script> tag
-        for script in item.find_all('script'):
-            script.extract()
-        # remove comments: <!-- -->
-        for comment in item.find_all(string = lambda text:isinstance(text, Comment)):
-            comment.extract()
-        # operation for <table> tag, that is, photos. TODO 
-        for photo in item.find_all('table'):
-
-            photo.extract()
-
-        for partial_text in item.stripped_strings:
-            text += partial_text + '\n\n'
-    '''
-        for partial_text in item.find_all(text=True):
-            # skipping new line character
-            if partial_text == '\n':
-                continue
-            text += partial_text.rstrip() + '\n\n'
-    '''
-
-    """
-    # Trimming after the email address of the author
-    #not working r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" from http://emailregex.com/
-    email_regex = r'[\w\.-]+@[\w\.-]+'
-    end_pos = re.search(email_regex, text).end()
-
-    # TODO: need to locate the last occurence of email. consider the case for parentheses
-    text = text[:end_pos+1]  
-    """
-    return text
-
-def get_textbody_and_imgs(soup):
+def get_textbody_and_imgs(soup, enzyme):
     text = ''
     img_pos = ''
     img_urls = ''
@@ -121,31 +86,48 @@ def get_textbody_and_imgs(soup):
     }
     return body_dict 
 
-def parse_article(article_URL):
+def parse_article(article_URL, enzyme):
     req = requests.get(article_URL) 
     soup = BeautifulSoup(req.text, 'lxml')
     data = {}
-    data['title'] = get_title(soup)
-    # in case of failure, return None. It will be taken care 
+    data['title'] = get_title(soup, enzyme)
+    # TODO in case of failure, return None. It will be taken care 
     if data['title'] == '':
         return None
-    data['written_date'] = get_date(soup)
-    data['journal'] = get_journal(soup)
-    body_dict = get_textbody_and_imgs(soup)
+    data['written_date'] = get_date(soup, enzyme)
+    data['journal'] = get_journal(soup, enzyme)
+
+    body_dict = get_textbody_and_imgs(soup, enzyme)
     data['textbody'] = body_dict['textbody']
     data['img_pos'] = body_dict['img_pos']
     data['img_urls'] = body_dict['img_urls']
     return data
 
+def get_not_cached_title(base_url, url):
+    req = requests.get(base_url) 
+    soup = BeautifulSoup(req.text, 'lxml')
+    title = soup.findAll('a', href=url)[0]
+    return title.text.strip()
+
 def main():
     article_URL = \
         'http://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=100&oid=022&aid=0003174397'
+    mylogger.info("[PARSER] requests.get(article_URL)")
     req = requests.get(article_URL) 
+    mylogger.info("[PARSER] soup = BeautifulSoup(req.text, 'lxml') ")
     soup = BeautifulSoup(req.text, 'lxml') 
     data = {}
+    mylogger.info("[PARSER] data['title'] = get_title(soup)")
     data['title'] = get_title(soup)
+    mylogger.info("[PARSER] data['written_date'] = get_date(soup)")
     data['written_date'] = get_date(soup)
-    data['textbody'] = get_textbody(soup)
+
+    mylogger.info("[PARSER] body_dict = get_textbody_and_imgs(soup)")
+    body_dict = get_textbody_and_imgs(soup)
+    data['textbody'] = body_dict['textbody']
+    data['img_pos'] = body_dict['img_pos']
+    data['img_urls'] = body_dict['img_urls']
+    mylogger.info("[PARSER] ends")
     print(data)
 
 if __name__ == '__main__':

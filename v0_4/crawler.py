@@ -27,7 +27,7 @@ def crawling(spiderID, section_id, urls, enzyme, article_cols, result_list, base
     for url in urls:
         article = {}
         try:
-            data = parse_article(url)
+            data = parse_article(url, enzyme)
             article = filter_dict_with_tuple(article_cols, data)
             article['cached'] = 1
         # parsing fail -> Cache fail
@@ -54,23 +54,31 @@ def main():
     sections = select_from(TABLE_SECTIONS)
     article_cols = column_name(TABLE_WHOLE_ARTS)
 
-    for (section_id, section_name, base_url) in sections:
-        article_urls = extract_article_urls(base_url)
+    for (section_id, section_name, base_url, enzyme_title, enzyme_article_body, enzyme_written_date,\
+            enzyme_journal, enzyme_image, enzyme_links_body) in sections:
+        enzyme = {
+            'title': enzyme_title,
+            'article_body': enzyme_article_body,
+            'written_date': enzyme_written_date,
+            'journal': enzyme_journal,
+            'image': enzyme_image,
+            'links_body': enzyme_links_body
+        }
+        article_urls = extract_article_urls(base_url, enzyme)
         article_urls = list_remove_duplicates(article_urls)
 
-        mylogger.info("[CRAWLER] url duplication check Starts")
         # redis use bytes format for data. so need to convert when comparing.
-        key_prev_urls = "prev_urls_of {}".format(section_id)
+        key_prev_urls = "v4 prev_urls_of {}".format(section_id)
         prev_urls = CACHE_SERVER.lrange(key_prev_urls, 0, -1)
 
-        if prev_urls != None:
+        if prev_urls != []:
             cur_urls = [bytes(x, 'utf-8') for x in article_urls]
             cur_urls_set = set(cur_urls)
             prev_urls_set = set(prev_urls)
             common_set = cur_urls_set & prev_urls_set
             # every elements already exist
             if len(common_set) == len(cur_urls_set):
-                mylogger.info("[CRAWLER] nothing new")
+                mylogger.info("[CRAWLER] nothing new. SKIP")
                 continue
             # some remains. need update
             else:
@@ -82,8 +90,6 @@ def main():
         CACHE_SERVER.lpush(key_prev_urls, *article_urls[::-1])
         CACHE_SERVER.ltrim(key_prev_urls, 0, CONFIG.MAX_CACHED_URLS)
 
-        mylogger.info("[CRAWLER] url duplication check Finished")
-
         capa = CONFIG.CRAWL_CAPACITY
         spider_cnt = -(-len(article_urls) // capa)
         result_list = []
@@ -93,7 +99,7 @@ def main():
                 .format(section_id, len(article_urls), spider_cnt))
 
         for i in range(spider_cnt):
-            thread = spiderWorker(i, section_id, article_urls[i*capa:(i+1)*capa], 1, article_cols, result_list, base_url)
+            thread = spiderWorker(i, section_id, article_urls[i*capa:(i+1)*capa], enzyme, article_cols, result_list, base_url)
             thread.start()
             threads.append(thread)
 
@@ -108,8 +114,8 @@ def main():
         insert_into_many(TABLE_WHOLE_ARTS, article_cols, flat_result)
         mylogger.info("[CRAWLER] Successfully stored.")
 
-    #close_db()
-    #mylogger.info("[CRAWLER] ======== DB closed ========")
+    close_db()
+    mylogger.info("[CRAWLER] ======== DB closed ========")
 
 def filter_dict_with_tuple(key_tuple, dict_data):
     result = {}

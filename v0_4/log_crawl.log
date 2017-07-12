@@ -1,0 +1,94 @@
+2017-06-16 08:01:17,986| [PARSER] logging start in parser.py
+2017-06-16 08:01:18,189| [CRAWLER] ======== DB opened ========
+2017-06-16 08:01:18,307| [CRAWLER] section: #1 - url duplication check Starts
+2017-06-16 08:01:18,307| [CRAWLER] url duplication check Finished
+2017-06-16 08:01:18,307| [CRAWLER] urls in section #1: 107. Required spiders: 6. Now starting.
+2017-06-16 08:01:18,308| [CRAWLER] Spider 0 Working on section #1
+2017-06-16 08:01:18,309| [CRAWLER] Spider 1 Working on section #1
+2017-06-16 08:01:18,310| [CRAWLER] Spider 2 Working on section #1
+2017-06-16 08:01:18,312| [CRAWLER] Spider 3 Working on section #1
+2017-06-16 08:01:18,314| [CRAWLER] Spider 4 Working on section #1
+2017-06-16 08:01:18,315| [CRAWLER] Spider 5 Working on section #1
+2017-06-16 08:01:34,944| [CRAWLER] 107 articles digested, now storing into DB
+2017-06-16 08:01:34,961| [CRAWLER] Successfully stored.
+2017-06-16 08:01:35,058| [CRAWLER] section: #2 - url duplication check Starts
+2017-06-16 08:01:35,058| [CRAWLER] url duplication check Finished
+2017-06-16 08:01:35,058| [CRAWLER] urls in section #2: 46. Required spiders: 3. Now starting.
+2017-06-16 08:01:35,058| [CRAWLER] Spider 0 Working on section #2
+2017-06-16 08:01:35,060| [CRAWLER] Spider 1 Working on section #2
+2017-06-16 08:01:35,061| [CRAWLER] Spider 2 Working on section #2
+2017-06-16 08:01:42,540| [CRAWLER] 46 articles digested, now storing into DB
+2017-06-16 08:01:42,549| [CRAWLER] Successfully stored.
+2017-06-16 08:01:42,550| [CRAWLER] ======== DB closed ========
+2017-06-16 08:02:43,619| [PARSER] logging start in parser.py
+2017-06-16 08:02:43,861| [CRAWLER] ======== DB opened ========
+2017-06-16 08:02:43,980| [CRAWLER] section: #1 - url duplication check Starts
+2017-06-16 08:02:43,981| [CRAWLER] remain urls: 4
+2017-06-16 08:02:43,981| [CRAWLER] url duplication check Finished
+2017-06-16 08:02:43,981| [CRAWLER] urls in section #1: 4. Required spiders: 1. Now starting.
+2017-06-16 08:02:43,981| [CRAWLER] Spider 0 Working on section #1
+2017-06-16 08:02:44,695| [CRAWLER] 4 articles digested, now storing into DB
+2017-06-16 08:02:44,699| [CRAWLER] Successfully stored.
+2017-06-16 08:02:44,799| [CRAWLER] section: #2 - url duplication check Starts
+2017-06-16 08:02:44,799| [CRAWLER] remain urls: 1
+2017-06-16 08:02:44,799| [CRAWLER] url duplication check Finished
+2017-06-16 08:02:44,799| [CRAWLER] urls in section #2: 1. Required spiders: 1. Now starting.
+2017-06-16 08:02:44,800| [CRAWLER] Spider 0 Working on section #2
+2017-06-16 08:02:44,958| [CRAWLER] 1 articles digested, now storing into DB
+2017-06-16 08:02:44,961| [CRAWLER] Successfully stored.
+2017-06-16 08:02:44,961| [CRAWLER] ======== DB closed ========
+2017-06-16 08:05:57,767| [PARSER] logging start in parser.py
+2017-06-16 08:05:57,968| [CRAWLER] ======== DB opened ========
+2017-06-16 08:05:58,072| [CRAWLER] urls in section #1: 106. Required spiders: 6. Now starting.
+2017-06-16 08:05:58,072| [CRAWLER] Spider 0 Working on section #1
+2017-06-16 08:05:58,074| [CRAWLER] Spider 1 Working on section #1
+2017-06-16 08:05:58,076| [CRAWLER] Spider 2 Working on section #1
+2017-06-16 08:05:58,077| [CRAWLER] Spider 3 Working on section #1
+2017-06-16 08:05:58,079| [CRAWLER] Spider 4 Working on section #1
+2017-06-16 08:05:58,080| [CRAWLER] Spider 5 Working on section #1
+2017-06-16 08:06:21,942| [CRAWLER] 106 articles digested, now storing into DB
+2017-06-16 08:06:21,983| [CRAWLER] Successfully stored.
+2017-06-16 08:06:22,263| [CRAWLER] urls in section #2: 46. Required spiders: 3. Now starting.
+2017-06-16 08:06:22,263| [CRAWLER] Spider 0 Working on section #2
+2017-06-16 08:06:22,270| [CRAWLER] Spider 1 Working on section #2
+2017-06-16 08:06:22,271| [CRAWLER] Spider 2 Working on section #2
+2017-06-16 08:06:37,616| [CRAWLER] 46 articles digested, now storing into DB
+2017-06-16 08:06:37,631| [CRAWLER] Successfully stored.
+2017-06-16 08:06:37,632| [CRAWLER] ======== DB closed ========
+2017-06-16 08:06:50,445| [PARSER] logging start in parser.py
+2017-06-16 08:06:50,649| [CRAWLER] ======== DB opened ========
+2017-06-16 08:06:50,786| [CRAWLER] remain urls: 1
+2017-06-16 08:06:50,786| [CRAWLER] urls in section #1: 1. Required spiders: 1. Now starting.
+2017-06-16 08:06:50,786| [CRAWLER] Spider 0 Working on section #1
+2017-06-16 08:06:50,961| [CRAWLER] 1 articles digested, now storing into DB
+2017-06-16 08:06:50,964| [CRAWLER] Successfully stored.
+2017-06-16 08:06:51,105| [CRAWLER] nothing new. SKIP
+2017-06-16 08:06:51,106| [CRAWLER] ======== DB closed ========
+2017-06-16 08:29:54,648| [PARSER] logging start in parser.py
+2017-06-16 08:29:54,850| [CRAWLER] ======== DB opened ========
+2017-06-16 08:29:54,985| [CRAWLER] remain urls: 14
+2017-06-16 08:29:54,986| [CRAWLER] urls in section #1: 14. Required spiders: 1. Now starting.
+2017-06-16 08:29:54,986| [CRAWLER] Spider 0 Working on section #1
+2017-06-16 08:29:57,344| [CRAWLER] 14 articles digested, now storing into DB
+2017-06-16 08:29:57,349| [CRAWLER] Successfully stored.
+2017-06-16 08:29:57,455| [CRAWLER] remain urls: 5
+2017-06-16 08:29:57,455| [CRAWLER] urls in section #2: 5. Required spiders: 1. Now starting.
+2017-06-16 08:29:57,456| [CRAWLER] Spider 0 Working on section #2
+2017-06-16 08:29:58,325| [CRAWLER] 5 articles digested, now storing into DB
+2017-06-16 08:29:58,329| [CRAWLER] Successfully stored.
+2017-06-16 08:29:58,330| [CRAWLER] ======== DB closed ========
+2017-06-16 08:30:47,458| [PARSER] logging start in parser.py
+2017-06-16 08:30:47,658| [CRAWLER] ======== DB opened ========
+2017-06-16 08:30:47,811| [CRAWLER] nothing new. SKIP
+2017-06-16 08:30:47,915| [CRAWLER] remain urls: 2
+2017-06-16 08:30:47,915| [CRAWLER] urls in section #2: 2. Required spiders: 1. Now starting.
+2017-06-16 08:30:47,915| [CRAWLER] Spider 0 Working on section #2
+2017-06-16 08:30:48,246| [CRAWLER] 2 articles digested, now storing into DB
+2017-06-16 08:30:48,249| [CRAWLER] Successfully stored.
+2017-06-16 08:30:48,339| [CRAWLER] urls in section #3: 51. Required spiders: 3. Now starting.
+2017-06-16 08:30:48,339| [CRAWLER] Spider 0 Working on section #3
+2017-06-16 08:30:48,340| [CRAWLER] Spider 1 Working on section #3
+2017-06-16 08:30:48,342| [CRAWLER] Spider 2 Working on section #3
+2017-06-16 08:30:54,962| [CRAWLER] 51 articles digested, now storing into DB
+2017-06-16 08:30:54,980| [CRAWLER] Successfully stored.
+2017-06-16 08:30:54,980| [CRAWLER] ======== DB closed ========
